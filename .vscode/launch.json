@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome with Extension",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "chrome://extensions",
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--disable-extensions-except=${workspaceFolder}/dist",
+        "--load-extension=${workspaceFolder}/dist",
+        "--no-first-run"
+      ],
+      "userDataDir": "${workspaceFolder}/.chrome"
+    }
+  ]
+}

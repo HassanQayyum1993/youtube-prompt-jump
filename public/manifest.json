@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Prompt Jump",
+  "version": "0.1.0",
+  "description": "Search YouTube transcripts and jump to timestamps from a prompt.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

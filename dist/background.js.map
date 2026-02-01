@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/background.ts"],
+  "sourcesContent": ["chrome.runtime.onInstalled.addListener(() => {\r\n  // Extension installed.\r\n});\r\n"],
+  "mappings": ";AAAA,OAAO,QAAQ,YAAY,YAAY,MAAM;AAE7C,CAAC;",
+  "names": []
+}
